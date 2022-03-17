@@ -1,0 +1,37 @@
+<div class="pos-f-t">
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"> ENCUESTAS</a>
+    <button class="navbar-toggler" type="button">
+      <a routerLink="/menu"><span class="navbar-toggler-icon"></span></a>
+    </button>
+  </nav>
+</div>
+
+<main role="main" class="container">
+
+  <div class="starter-template">
+    <h1>Listado de Resultados</h1>
+    <p class="lead">Datos obtenidos desde la Base de datos "Encuestas" .<br> la cual esta alojada en MondoDB Atlas</p>
+  </div>
+
+</main>
+
+
+<div class=“container”>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nro</th>
+        <th>Email</th>
+        <th>Estilo Musical</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let encuesta of encuestas; index as i">
+        <td>{{ i+1 }}</td>
+        <td>{{ encuesta.email }}</td>
+        <td>{{ encuesta.musicStyle }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

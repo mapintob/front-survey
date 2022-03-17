@@ -1,0 +1,26 @@
+#main{
+  background-color: #5454b4 ;
+  color:white;
+  text-align: center;
+}
+
+.flex-container button{
+  color:white;
+  margin-top: 30px;
+  width: 100%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.flex-container input{
+  margin-top: 10px;
+  height: 35px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.flex-container select{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 35px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+

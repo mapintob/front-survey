@@ -1,0 +1,32 @@
+<div id="main">
+  <div class="pos-f-t">
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"> ENCUESTAS </a>
+      <button class="navbar-toggler" type="button">
+        <a routerLink="/menu"><span class="navbar-toggler-icon"></span></a>
+      </button>
+    </nav>
+  </div>
+
+  <div class="row flex-container">
+          <form [formGroup]="surveyForm">
+            <div class="form-group col-10 col-md-5">
+              <label for="estiloMusical">Estilo Musical</label>
+              <select id="estiloMusical" name="estiloMusical" formControlName="musicStyle" class="form-control">
+                <option [value]="estilo" *ngFor="let estilo of estilos">{{estilo}}</option>
+              </select>
+            </div>
+
+            <div class="form-group col-10 col-md-5">
+              <label for="email" >Correo Electrónico</label>
+              <input id="email" type="text" placeholder="example@correo.com" name="email" class="form-control" formControlName="email">
+              <div *ngIf="surveyForm.controls['email'].hasError('emailError')==true" class="form-text text-danger">
+                email con formato no valido
+              </div>
+            </div>
+            <div class="form-group col-10 col-md-5">
+              <button type="button" class="btn btn-dark" [disabled]="!surveyForm.valid" (click)="sendSurveyForm()">Enviar</button>
+            </div>
+          </form>
+      </div>
+</div>

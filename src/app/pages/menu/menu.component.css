@@ -1,0 +1,20 @@
+#main{
+  background-color: #D3D3D3;
+}
+
+.flex-container a{
+  margin-top: 30px;
+}
+
+.flex-container a button{
+  width: 100%;
+  padding: 30px;
+  font-size: 100%;
+  font-weight: bold;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+a{
+  margin-left: 2%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
